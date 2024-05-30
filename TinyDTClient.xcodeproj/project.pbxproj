@@ -10,6 +10,9 @@
 		821363492B50746500691CB4 /* TinyDTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821363482B50746500691CB4 /* TinyDTClient.swift */; };
 		8213634B2B5074A500691CB4 /* RealHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = 8213634A2B5074A500691CB4 /* RealHTTP */; };
 		8269679E2B5070B00085C032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8269679D2B5070B00085C032 /* ContentView.swift */; };
+		B9DC719C2C09014E0018DB4E /* ServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC719B2C09014E0018DB4E /* ServerClient.swift */; };
+		B9DC719F2C0903A40018DB4E /* Collapsible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC719E2C0903A40018DB4E /* Collapsible.swift */; };
+		B9DC71A12C0905CA0018DB4E /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DC71A02C0905CA0018DB4E /* ServerRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +20,9 @@
 		82292CFC2B2E43670042A1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		826967992B5070B00085C032 /* TinyDTClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyDTClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8269679D2B5070B00085C032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9DC719B2C09014E0018DB4E /* ServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerClient.swift; sourceTree = "<group>"; };
+		B9DC719E2C0903A40018DB4E /* Collapsible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collapsible.swift; sourceTree = "<group>"; };
+		B9DC71A02C0905CA0018DB4E /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +40,7 @@
 		82292CEC2B2E43660042A1C6 = {
 			isa = PBXGroup;
 			children = (
-				8269679A2B5070B00085C032 /* source */,
+				8269679A2B5070B00085C032 /* Source */,
 				82292CF72B2E43660042A1C6 /* Assets */,
 				82292CF62B2E43660042A1C6 /* Products */,
 			);
@@ -56,13 +62,40 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		8269679A2B5070B00085C032 /* source */ = {
+		8269679A2B5070B00085C032 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				821363482B50746500691CB4 /* TinyDTClient.swift */,
-				8269679D2B5070B00085C032 /* ContentView.swift */,
+				B9DC719A2C0901010018DB4E /* Client */,
+				B9DC71A22C0906490018DB4E /* Interface */,
 			);
-			path = source;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B9DC719A2C0901010018DB4E /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B9DC719B2C09014E0018DB4E /* ServerClient.swift */,
+				B9DC71A02C0905CA0018DB4E /* ServerRequest.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		B9DC719D2C0903870018DB4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B9DC719E2C0903A40018DB4E /* Collapsible.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B9DC71A22C0906490018DB4E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8269679D2B5070B00085C032 /* ContentView.swift */,
+				B9DC719D2C0903870018DB4E /* Components */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DC71A12C0905CA0018DB4E /* ServerRequest.swift in Sources */,
 				8269679E2B5070B00085C032 /* ContentView.swift in Sources */,
 				821363492B50746500691CB4 /* TinyDTClient.swift in Sources */,
+				B9DC719C2C09014E0018DB4E /* ServerClient.swift in Sources */,
+				B9DC719F2C0903A40018DB4E /* Collapsible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +320,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = QBA62ZAWDB;
+				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
@@ -327,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = QBA62ZAWDB;
+				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
